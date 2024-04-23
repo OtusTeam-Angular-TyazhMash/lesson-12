@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Singleton} from "../Singleton";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lesson-12';
+
+  singleton: Singleton = Singleton.getInstance();
+  Singleton = Singleton;
 }
